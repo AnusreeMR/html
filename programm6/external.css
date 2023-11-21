@@ -1,0 +1,13 @@
+div{
+	color:black;
+}
+h1{
+	font-weight:normal;
+	margin-bottom:2em;
+	text-transform:uppercase;
+}
+p{
+	font-weight:normal;
+	text-align:center;
+	background-color:red;
+}
