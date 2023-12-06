@@ -1,0 +1,20 @@
+<html>
+<head><title>mouseover</title>
+</head>
+<body>
+<h1 id="pic" >OH MY GOD</h1><br><br>
+<center><img id="img1" onmouseover="myfunction()" onmouseout="myfunction2()" src="/home/ksb/Downloads/Emotions-2.jpg" width="600px" height="500px"></center>
+<script>
+function myfunction()
+{
+document.getElementById("img1").src="/home/ksb/Downloads/Emotions-2.jpg";
+document.getElementById("pic").innerHTML="OH MY GOD";
+}
+function myfunction2()
+{
+document.getElementById("img1").src="/home/ksb/Downloads/expression1.jpg";
+document.getElementById("pic").innerHTML="SMILE";
+}
+</script>
+</body>
+</html>
