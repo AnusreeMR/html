@@ -1,0 +1,92 @@
+<html>
+<head>
+</head>
+<body>
+<body bgcolor="Lavender ">
+<script>
+function exam()
+{
+if(document.examForm.name.value=="" || document.examForm.name.value==null)
+{
+alert("Name can't be blank");
+return false;
+}
+if(document.examForm.roll.value=="" || document.examForm.roll.value==null)
+{
+alert("Roll number can't be blank");
+return false;
+}
+if(document.examForm.dep.value=="" || document.examForm.dep.value==null)
+{
+alert("Department can't be blank");
+return false;
+}
+var m=0;
+if(document.examForm.one.value=="c")
+m=m+1;
+if(document.examForm.two.value=="d")
+m=m+1;
+if(document.examForm.three.value=="b")
+m=m+1;
+if(document.examForm.four.value=="c")
+m=m+1;
+if(document.examForm.five.value=="a")
+m=m+1;
+alert("Thank you for taking the online exam !! \n your score is :"+m+" out of 5");
+}
+</script>
+<form name ="examForm" onsubmit="return exam()" method="get"><font color="darkblue">
+<center><u><h2>ONLINE EXAM FORM</center></u></h2>
+Enter your name :<input type="text" name="name"><br><br>
+Enter Your Roll Number :<input type="text" name="roll"><br><br>
+Enter Your Department :<input type="text" name="dep">
+<p>1)JavaScript is a ___ -side programming language.<br><br>
+<input type="radio" name="one" value="a"> Client <br><br>
+<input type="radio" name="one" value="b"> Server<br><br>
+<input type="radio" name="one" value="c">Both<br><br>
+<input type="radio" name="one" value="d">None<br><br>
+</p>
+
+<p>2)Which of the following will write the message “Hello DataFlair!” in an alert box?<br><br>
+<input type="radio" name="two" value="a"> alertBox(“Hello DataFlair!”);<br><br>
+<input type="radio" name="two" value="b"> alert(Hello DataFlair!); <br><br>
+<input type="radio" name="two" value="c">msgAlert(“Hello DataFlair!”); <br><br>
+<input type="radio" name="two" value="d"> alert(“Hello DataFlair!”); <br><br>
+</p>
+
+
+<p>3)How do you find the minimum of x and y using JavaScript?<br><br>
+<input type="radio" name="three" value="a"> min(x,y); <br><br>
+<input type="radio" name="three" value="b"> Math.min(x,y) <br><br>
+<input type="radio" name="three" value="c"> Math.min(xy) <br><br>
+<input type="radio" name="three" value="d">min(xy); <br><br>
+</p>
+<p>4)Which are the correct “if” statements to execute certain code if “x” is equal to 2?<br><br>
+<input type="radio" name="four" value="a"> if(x 2)<br><br>
+<input type="radio" name="four" value="b"> if(x = 2) <br><br>
+<input type="radio" name="four" value="c">if(x == 2)<br><br>
+<input type="radio" name="four" value="d"> if(x != 2 ) <br><br>
+</p>
+
+<p>5)What will the code return?
+Boolean(3 < 7)<br><br>
+<input type="radio" name="five" value="a">true <br><br>
+<input type="radio" name="five" value="b"> false <br><br>
+<input type="radio" name="five" value="c"> NaN <br><br>
+<input type="radio" name="five" value="d"> SyntaxError<br<br>>
+</p>
+<p>
+<center>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</font>
+</center>
+</p>
+</body>
+</html>
+
+ 
+    
+
+
+    
